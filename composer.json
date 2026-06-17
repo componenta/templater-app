@@ -1,0 +1,36 @@
+{
+    "name": "componenta/templater-app",
+    "description": "Componenta application integration for template rendering",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "componenta/app": "^1.0",
+        "componenta/config": "^1.0",
+        "componenta/path-resolver": "^1.0",
+        "componenta/scope": "^1.0",
+        "componenta/templater": "^1.0",
+        "psr/container": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Templater\\App\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Componenta\\Templater\\App\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "componenta": {
+            "config-providers": [
+                "Componenta\\Templater\\App\\ConfigProvider"
+            ]
+        }
+    }
+}
