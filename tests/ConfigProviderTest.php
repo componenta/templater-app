@@ -15,7 +15,7 @@ it('registers templating services without a legacy autowire section', function (
     $config = (new ConfigProvider())();
 
     expect($config[AppConfigKey::BOOTLOADERS])->toBe([ViewBootloader::class])
-        ->and($config[DependencyConfigKey::DEPENDENCIES])->not->toHaveKey(DependencyConfigKey::AUTOWIRES)
+        ->and($config[DependencyConfigKey::DEPENDENCIES])->not->toHaveKey('autowires')
         ->and($config[DependencyConfigKey::DEPENDENCIES][DependencyConfigKey::FACTORIES])->toBe([
             Engine::class => EngineFactory::class,
             RendererInterface::class => RendererFactory::class,
