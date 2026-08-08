@@ -32,5 +32,17 @@
                 "Componenta\\Templater\\App\\ConfigProvider"
             ]
         }
-    }
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/pest"
+    },
+    "prefer-stable": true
 }

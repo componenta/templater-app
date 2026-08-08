@@ -21,13 +21,6 @@ final class ConfigProvider extends BaseConfigProvider
         ];
     }
 
-    protected function getAutowires(): array
-    {
-        return [
-            ViewBootloader::class,
-        ];
-    }
-
     protected function getConfig(): array
     {
         return [
