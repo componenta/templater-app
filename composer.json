@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "componenta/app": "^2.0@dev",
+        "componenta/app": "^2.0",
         "componenta/config": "^1.0",
         "componenta/path-resolver": "^1.0",
         "componenta/scope": "^1.0",
@@ -25,7 +25,7 @@
             "Componenta\\Templater\\App\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "extra": {
         "componenta": {
             "config-providers": [
