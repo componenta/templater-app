@@ -5,8 +5,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "componenta/app": "^1.0 || ^2.0 || ^3.0.2",
-        "componenta/config": "^2.0.2",
+        "componenta/app": "^4.0.0",
+        "componenta/config": "^3.0.0",
         "componenta/path-resolver": "^1.0",
         "componenta/scope": "^1.0",
         "componenta/templater": "^1.0",
@@ -31,6 +31,9 @@
             "config-providers": [
                 "Componenta\\Templater\\App\\ConfigProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-main": "1.1.x-dev"
         }
     },
     "require-dev": {
